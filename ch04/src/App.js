@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Hello = (props) => {
-  return <div>こんにちは</div>;
+class Hello extends Component {
+  render() {
+    return <div>こんにちは! {this.props.name}さん</div>
+  }
 }
 
 export default Hello;
